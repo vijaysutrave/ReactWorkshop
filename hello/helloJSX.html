@@ -1,0 +1,21 @@
+<html>
+	<head>
+			<script src="../lib/react-0.13.1.js"></script>	
+			<script src="../lib/JSXTransformer-0.13.1.js"></script>
+	</head>
+
+	<body>
+		<div id="container"></div>
+
+	<script type="text/jsx">
+		var hello = React.createClass({
+			render : function() {
+				return (
+					<div className="hello"> {"hello "+this.props.name} </div>);
+			}
+		});
+
+		React.render(React.createElement(hello, {name : "Chat Application"}), document.getElementById('container'));
+	</script>
+	</body>
+</html>
